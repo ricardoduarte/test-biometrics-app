@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_biometrics/login_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -9,10 +10,24 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Home'),
       ),
-      body: const Center(
-        child: Text(
-          'Olá! Você está autenticado.',
-          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+      body: Center(
+        child: Column(
+          children: [
+            const Text(
+              'Olá! Você está autenticado.',
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+            ),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const LoginScreen()));
+              },
+              child: const Text('Logout'),
+            ),
+          ],
         ),
       ),
     );

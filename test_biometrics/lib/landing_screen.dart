@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'splash_screen.dart';
-import 'auth_screen.dart';
+import 'login_screen.dart';
 
 class LandingScreen extends StatelessWidget {
   const LandingScreen({super.key});
@@ -24,7 +24,7 @@ class LandingScreen extends StatelessWidget {
               if (snapshot.data == null) {
                 return const SplashScreen();
               } else {
-                return const LocalAuthScreen();
+                return const LoginScreen();
               }
             default:
               return const SplashScreen();
