@@ -48,6 +48,6 @@
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>NSFaceIDUsageDescription</key>
-	<string>Uses Face ID<string>
+	<string>Uses Face ID</string>
 </dict>
 </plist>
